@@ -2,6 +2,6 @@
 layout: ../../components/layouts/MainLayout.astro
 ---
 
-# This is a note post with markdown
+# Astro tutorial
 
 Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo
