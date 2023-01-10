@@ -1,12 +1,9 @@
 ---
-interface PostProps {
-  title: string
-  body: string
+interface Props {
+  title: string | unknown
+  body: string | unknown
 }
-const {
-  title = 'Post without title',
-  body = 'Post without body',
-} /* : PostProps */ = Astro.props
+const { title = 'Post without title', body = 'Post without body' } = Astro.props
 ---
 
 <li>
