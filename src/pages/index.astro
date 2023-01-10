@@ -4,6 +4,8 @@ const h2 = 'Variable from Server'
 const h2Color = '#cac5c5'
 
 const hobbiesList = ['read', 'music', 'sports']
+
+const isActive = false
 ---
 
 <style define:vars={{ h2Color }}>
@@ -32,8 +34,11 @@ const hobbiesList = ['read', 'music', 'sports']
   <body>
     <h1 class="title">Astro Fenómeno</h1>
     <h2 class="h2">Server Side Rendered variable: {h2}</h2>
+    <hr />
+    <h2>Hobbies from Array</h2>
     <ul>
       {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
     </ul>
+    <p>Is active? {isActive ? 'Yes' : 'No'}</p>
   </body>
 </html>
