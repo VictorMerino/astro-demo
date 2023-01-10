@@ -2,6 +2,8 @@
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
 const h2Color = '#cac5c5'
+
+const hobbiesList = ['read', 'music', 'sports']
 ---
 
 <style define:vars={{ h2Color }}>
@@ -30,5 +32,8 @@ const h2Color = '#cac5c5'
   <body>
     <h1 class="title">Astro Fenómeno</h1>
     <h2 class="h2">Server Side Rendered variable: {h2}</h2>
+    <ul>
+      {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
+    </ul>
   </body>
 </html>
