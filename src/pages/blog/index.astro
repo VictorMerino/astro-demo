@@ -9,7 +9,7 @@ const posts = await Astro.glob('./**/*.md')
     posts.map(post => (
       <div class="link-wrapper">
         <a href={post.url} class="link">
-          {post.frontmatter.title}
+          {post.frontmatter.pageTitle}
         </a>
       </div>
     ))

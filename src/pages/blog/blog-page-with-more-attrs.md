@@ -1,6 +1,6 @@
 ---
 layout: ../../components/layouts/MainLayout.astro
-title: Blog page with more attrs
+pageTitle: Blog page with more attrs
 author: Myself
 ---
 

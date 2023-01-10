@@ -1,8 +1,8 @@
 ---
 layout: ../../components/layouts/MainLayout.astro
-title: Astro tutorial
+pageTitle: Astro tutorial
 ---
 
 # Astro tutorial
 
-Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo
+In markdown files, everything that we write between the "---" will be accesible via frontmatters variable
