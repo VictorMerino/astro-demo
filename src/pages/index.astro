@@ -1,4 +1,6 @@
 ---
+import MainLayout from '../components/layouts/MainLayout.astro'
+
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
 const h2Color = '#cac5c5'
@@ -25,22 +27,13 @@ const isActive = false
   console.log('This will be shown in browser console')
 </script>
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1 class="title">Astro Fenómeno</h1>
-    <h2 class="h2">Server Side Rendered variable: {h2}</h2>
-    <hr />
-    <h2>Hobbies from Array</h2>
-    <ul>
-      {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
-    </ul>
-    <p>Is active? {isActive ? 'Yes' : 'No'}</p>
-  </body>
-</html>
+<MainLayout>
+  <h1 class="title">Astro Fenómeno</h1>
+  <h2 class="h2">Server Side Rendered variable: {h2}</h2>
+  <hr />
+  <h2>Hobbies from Array</h2>
+  <ul>
+    {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
+  </ul>
+  <p>Is active? {isActive ? 'Yes' : 'No'}</p>
+</MainLayout>
