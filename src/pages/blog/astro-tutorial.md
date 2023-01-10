@@ -1,5 +1,6 @@
 ---
 layout: ../../components/layouts/MainLayout.astro
+title: Astro tutorial
 ---
 
 # Astro tutorial

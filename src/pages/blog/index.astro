@@ -1,0 +1,29 @@
+---
+import MainLayout from '../../components/layouts/MainLayout.astro'
+const posts = await Astro.glob('./**/*.md')
+---
+
+<MainLayout pageTitle="Blog in markdown">
+  <h1>Blog index</h1>
+  {
+    posts.map(post => (
+      <div class="link-wrapper">
+        <a href={post.url} class="link">
+          {post.frontmatter.title}
+        </a>
+      </div>
+    ))
+  }
+</MainLayout>
+
+<style>
+  .link-wrapper {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem;
+    background-color: antiquewhite;
+  }
+  .link {
+    color: black;
+    text-decoration: none;
+  }
+</style>
