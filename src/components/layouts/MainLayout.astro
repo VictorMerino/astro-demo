@@ -1,8 +1,10 @@
 ---
 interface Props {
   pageTitle?: string
+  pageDescription?: string
 }
-const { pageTitle = 'Default title' } = Astro.props
+const { pageTitle = 'Default title', pageDescription = 'Default description' } =
+  Astro.props
 ---
 
 <style>
@@ -22,6 +24,7 @@ const { pageTitle = 'Default title' } = Astro.props
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Astro | {pageTitle}</title>
+    <meta name="description" content={pageDescription} />
   </head>
   <body>
     <slot />

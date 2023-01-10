@@ -8,7 +8,10 @@ const posts = await response.json()
 // https://jsonplaceholder.typicode.com/posts
 ---
 
-<MainLayout pageTitle="Posts page">
+<MainLayout
+  pageTitle="Posts page"
+  pageDescription="Descripción de la página de posts"
+>
   <h1>Posts</h1>
   <ul style="list-style: none; padding-left: 0">
     {
