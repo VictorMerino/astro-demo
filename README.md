@@ -1,5 +1,11 @@
 # Astro Starter Kit: Minimal
 
+Add "prettier.documentSelectors": ["**/*.astro"],
+"[astro]": {
+"editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+to VSCode in HP Laptop!!
+
 ```
 npm create astro@latest -- --template minimal
 ```

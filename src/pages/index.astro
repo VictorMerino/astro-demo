@@ -1,8 +1,7 @@
 ---
 import MainLayout from '../components/layouts/MainLayout.astro'
 
-import {ButtonsInReact} from '../components/ButtonsInReact'
-
+import { ButtonsInReact } from '../components/ButtonsInReact'
 
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
@@ -34,5 +33,4 @@ const isActive = false
   <p>Is active? {isActive ? 'Yes' : 'No'}</p>
   <hr />
   <ButtonsInReact client:load />
-
 </MainLayout>
