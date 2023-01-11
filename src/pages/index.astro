@@ -1,6 +1,8 @@
 ---
 import MainLayout from '../components/layouts/MainLayout.astro'
 
+import {ButtonCounter} from '../components/ButtonCounter'
+
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
 const h2Color = '#cac5c5'
@@ -29,4 +31,6 @@ const isActive = false
     {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
   </ul>
   <p>Is active? {isActive ? 'Yes' : 'No'}</p>
+  <hr />
+  <ButtonCounter client:load />
 </MainLayout>
