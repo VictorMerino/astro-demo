@@ -27,6 +27,8 @@ const { pageTitle = 'Default title', pageDescription = 'Default description' } =
     <meta name="description" content={pageDescription} />
   </head>
   <body>
-    <slot />
+    <div class="container my-3">
+      <slot />
+    </div>
   </body>
 </html>
