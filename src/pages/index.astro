@@ -1,7 +1,17 @@
 ---
+import About from '../components/landing/About.astro'
+import Features from '../components/landing/Features.astro'
+import Hero from '../components/landing/Hero.astro'
+import More from '../components/landing/More.astro'
+import Projects from '../components/landing/Projects.astro'
 import LandingLayout from '../layouts/LandingLayout.astro'
 ---
 
 <LandingLayout>
   <h1 class="title">Astro Landing</h1>
+  <Hero />
+  <More />
+  <Features />
+  <About />
+  <Projects />
 </LandingLayout>
