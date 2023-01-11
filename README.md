@@ -1,13 +1,3 @@
-# Note for Thursday:
-
-```
-Add "prettier.documentSelectors": ["**/*.astro"],
-"[astro]": {
-"editor.defaultFormatter": "esbenp.prettier-vscode"
-}
-to VSCode in HP Laptop!!
-```
-
 # Landing page and some examples from Fazt mini-course
 
 Using:
