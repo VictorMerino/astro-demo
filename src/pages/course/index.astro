@@ -1,7 +1,7 @@
 ---
-import MainLayout from '../components/layouts/MainLayout.astro'
+import CourseLayout from '../../components/layouts/CourseLayout.astro'
 
-import { ButtonsInReact } from '../components/ButtonsInReact'
+import { ButtonsInReact } from '../../components/course/ButtonsInReact'
 
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
@@ -22,7 +22,7 @@ const isActive = false
   console.log('This will be shown in browser console')
 </script>
 
-<MainLayout>
+<CourseLayout>
   <h1 class="title">Astro Fenómeno</h1>
   <h2 class="h2">Server Side Rendered variable: {h2}</h2>
   <hr />
@@ -33,4 +33,4 @@ const isActive = false
   <p>Is active? {isActive ? 'Yes' : 'No'}</p>
   <hr />
   <ButtonsInReact client:load />
-</MainLayout>
+</CourseLayout>
