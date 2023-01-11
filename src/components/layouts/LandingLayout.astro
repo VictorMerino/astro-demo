@@ -1,0 +1,24 @@
+---
+interface Props {
+  pageTitle?: string
+  pageDescription?: string
+}
+const { pageTitle = 'Default title', pageDescription = 'Default description' } =
+  Astro.props.frontmatter || Astro.props
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Landing | {pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+  </head>
+  <body class="bg-slate-800 text-slate-50">
+    <div class="container my-5">
+      <slot />
+    </div>
+  </body>
+</html>
