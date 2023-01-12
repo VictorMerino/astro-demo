@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/structure/Footer.astro'
+
 interface Props {
   pageTitle?: string
   pageDescription?: string
@@ -20,5 +22,6 @@ const { pageTitle = 'Default title', pageDescription = 'Default description' } =
     <main class="container sm:my-8">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
