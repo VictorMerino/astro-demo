@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "title": "Título 1",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_web_development.svg"
+        },
+        {
+            "title": "Título 2",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_react.svg"
+        },
+        {
+            "title": "Título 3",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_next_js.svg"
+        },
+        {
+            "title": "Título 4",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_nuxt_js.svg"
+        },
+        {
+            "title": "Título 5",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_tailwind_css.svg"
+        },
+        {
+            "title": "Título 6",
+            "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, autem labore officiis vero soluta placeat aspernatur eveniet, facere atque inventore aperiam. Consequuntur, velit minima? Blanditiis laborum distinctio deserunt voluptates ea?",
+            "image": "images/undraw_developer_activity.svg"
+        }
+    ]
+}
