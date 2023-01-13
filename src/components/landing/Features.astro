@@ -2,10 +2,14 @@
 import features from '../../config/features.json'
 ---
 
-<section>
-  <h2 class="text-center font-bold text-center text-4xl mt-10 mb-4">
-    Features
-  </h2>
+<section class="mb-10">
+  <div class="text-center mb-5">
+    <h2 class="text-center font-bold text-center text-4xl mt-10 mb-2">
+      Features
+    </h2>
+    <p>The content of this section is imported from a JSON array</p>
+  </div>
+
   <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
     {
       features.map(feature => {

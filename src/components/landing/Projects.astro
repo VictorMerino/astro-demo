@@ -3,9 +3,15 @@ import { projects } from '../../config/projects.json'
 ---
 
 <section class="flex flex-col">
-  <h2 class="text-center font-bold text-center text-4xl mt-10 mb-4">
-    Projects
-  </h2>
+  <div class="text-center mb-5">
+    <h2 class="text-center font-bold text-center text-4xl mt-10 mb-2">
+      Projects
+    </h2>
+    <p>
+      The content of this section is imported from a JSON object, and
+      destructuring it
+    </p>
+  </div>
   <div>
     {
       projects.map(project => (
