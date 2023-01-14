@@ -2,11 +2,21 @@
 import { projects } from '../../config/projects.json'
 ---
 
+<script>
+  // Find all buttons with the `alert` class on the page.
+  const buttons = document.querySelectorAll('.more-info')
+
+  // Handle clicks on each button.
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      alert('Not implemented!')
+    })
+  })
+</script>
+
 <section class="flex flex-col p-5 justify-around">
   <div class="text-center mb-5">
-    <h2 class="text-center font-bold text-center text-4xl mt-10 mb-2">
-      Projects
-    </h2>
+    <h2 class="text-center font-bold text-4xl mt-10 mb-2">Projects</h2>
     <p>
       The content of this section is imported from a JSON object, and
       destructuring it
@@ -19,7 +29,7 @@ import { projects } from '../../config/projects.json'
           <div class="basis-2/3">
             <h3 class="mb-4 font-bold text-2xl">{project.title}</h3>
             <p class="mb-4">{project.description}</p>
-            <button class="bg-indigo-600 px-3 py-2 hover:bg-indigo-500">
+            <button class="more-info bg-indigo-600 px-3 py-2 hover:bg-indigo-500">
               More info
             </button>
           </div>
