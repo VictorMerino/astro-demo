@@ -40,7 +40,6 @@ for full integration with Prettier in Astro files
 - Blog is one thing with MD, but Posts should be changed to another kind of "demo" like
 - Fill blog entries with actual implementation details
 - Blog main page: with card of minidescription, images, etc...
-- Remove fistrum.html file
 - Change also URL to astro-demo (is not actually a course...)
 
 # Based on Astro Starter Kit: Minimal

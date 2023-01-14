@@ -1,0 +1,30 @@
+---
+import HomeIcon from '../../assets/HomeIcon.astro'
+---
+
+<header>
+  <nav class="p-4 bg-black">
+    <div class="container flex justify-between items-center">
+      <a href="/astro-course"><HomeIcon /></a>
+      <ul class="flex mr-auto ml-6">
+        <li class="mr-6">
+          <a
+            href="/astro-course/about"
+            class="text-blue-200 hover:text-blue-400">About</a
+          >
+        </li>
+        <li class="mr-6">
+          <a
+            href="/astro-course/course"
+            class="text-blue-200 hover:text-blue-400">Course</a
+          >
+        </li>
+      </ul>
+      <img
+        class="h-8"
+        alt="Astro Framework logo"
+        src="/images/astro-full-logo.svg"
+      />
+    </div>
+  </nav>
+</header>
