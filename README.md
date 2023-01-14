@@ -32,15 +32,11 @@ for full integration with Prettier in Astro files
 # Next steps:
 
 - Astro + Sanity: https://www.sanity.io/plugins/astro-sanity
-- Header
-- Adapt CourseLanding to the colour palette of the Main one
 - Link everything so that the demo is full equiped
 - Check CSS duplications and possible improvements
-- Change names: from course to demos
 - Blog is one thing with MD, but Posts should be changed to another kind of "demo" like
 - Fill blog entries with actual implementation details
 - Blog main page: with card of minidescription, images, etc...
-- Change also URL to astro-demo (is not actually a course...)
 
 # Based on Astro Starter Kit: Minimal
 
