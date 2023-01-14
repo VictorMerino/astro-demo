@@ -25,7 +25,6 @@ And add:
 "[astro]": {
 "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
-to VSCode in HP Laptop!!
 ```
 
 for full integration with Prettier in Astro files
