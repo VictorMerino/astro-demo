@@ -1,0 +1,12 @@
+---
+interface Props {
+  name: string | unknown
+  city: string | unknown
+}
+const { name = 'No name', city = 'No city' } = Astro.props
+---
+
+<li class="p-3 mb-3 bg-slate-500">
+  <h3><strong>Name:</strong> {name}</h3>
+  <p><strong>City:</strong> {city}</p>
+</li>
