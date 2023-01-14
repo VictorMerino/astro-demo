@@ -1,9 +1,9 @@
 ---
-import CourseLayout from '../../layouts/CourseLayout.astro'
+import Layout from '../../layouts/Layout.astro'
 import imageFromSrc from '../../images/pexels-photo-14296967.jpeg'
 ---
 
-<CourseLayout>
+<Layout>
   <h1>About</h1>
   <hr />
   <h3>Image from public folder:</h3>
@@ -11,4 +11,4 @@ import imageFromSrc from '../../images/pexels-photo-14296967.jpeg'
   <hr />
   <h3>Image from src:</h3>
   <img src={imageFromSrc} />
-</CourseLayout>
+</Layout>

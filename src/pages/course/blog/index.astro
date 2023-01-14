@@ -1,9 +1,9 @@
 ---
-import CourseLayout from '../../../layouts/CourseLayout.astro'
+import Layout from '../../../layouts/Layout.astro'
 const posts = await Astro.glob('./**/*.md')
 ---
 
-<CourseLayout pageTitle="Blog in markdown">
+<Layout pageTitle="Blog in markdown">
   <h1>Blog index</h1>
   {
     posts.map(post => (
@@ -14,7 +14,7 @@ const posts = await Astro.glob('./**/*.md')
       </div>
     ))
   }
-</CourseLayout>
+</Layout>
 
 <style>
   .link-wrapper {

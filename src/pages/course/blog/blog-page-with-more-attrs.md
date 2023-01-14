@@ -1,5 +1,5 @@
 ---
-layout: ../../../layouts/CourseLayout.astro
+layout: ../../../layouts/Layout.astro
 pageTitle: Blog page with more attrs
 author: Myself
 ---
