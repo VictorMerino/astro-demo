@@ -3,7 +3,7 @@ interface Props {
   url?: URL | string
   text: string | unknown
 }
-const { url = '/', text = 'No text' } = Astro.props
+const { url = '#', text = 'No text' } = Astro.props
 ---
 
 <a href={url} class="mb-3 block">
