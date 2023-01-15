@@ -32,9 +32,7 @@ for full integration with Prettier in Astro files
 # Next steps:
 
 - Astro + Sanity: https://www.sanity.io/plugins/astro-sanity
-- Link everything so that the demo is full equiped
 - Check CSS duplications and possible improvements
-- Blog is one thing with MD, but Posts should be changed to another kind of "demo" like
 - Fill blog entries with actual implementation details
 - Blog main page: with card of minidescription, images, etc...
 
