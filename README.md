@@ -35,6 +35,7 @@ for full integration with Prettier in Astro files
 - Check CSS duplications and possible improvements
 - Fill blog entries with actual implementation details
 - Blog main page: with card of minidescription, images, etc...
+- Facade for Youtube Embed Video: will improve so much "time to interactive" metric
 
 # Based on Astro Starter Kit: Minimal
 
