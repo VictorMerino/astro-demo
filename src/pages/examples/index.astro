@@ -1,17 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 
-import { ButtonsInReact } from '../../components/examples/ButtonsInReact'
 import LinkCard from '../../components/LinkCard.astro'
 
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
 const h2Color = '#cac5c5'
 
-const hobbiesList = ['read', 'music', 'sports']
-
-const isActive = false
-
+// TO-DO: where do I get page parameter from??
 const childrenPages = await Astro.glob('./**/*.astro')
 // console.log(childrenPages[0])
 // console.log(Astro)
@@ -28,19 +24,19 @@ const childrenPages = await Astro.glob('./**/*.astro')
 </script>
 
 <Layout>
-  <h1 class="title">Astro Fenómeno</h1>
+  <h1 class="title">Examples using Astro Framework</h1>
   <h2 class="h2 mb-5">Server Side Rendered variable: {h2}</h2>
 
-  {childrenPages.map(page => <LinkCard url={page.url} text={page.url} />)}
+  {/* childrenPages.map(page => <LinkCard url={page.url} text={page.url} />) */}
 
-  <hr />
-  TO OTHER PAGE:
-  <h2>Hobbies from Array</h2>
-  <ul>
-    {hobbiesList.map(hobbie => <li>{hobbie}</li>)}
-  </ul>
-  TO OTHER PAGE:
-  <p>Is active? {isActive ? 'Yes' : 'No'}</p>
-  <hr />
-  <ButtonsInReact client:load />
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <LinkCard url="/astro-demo/examples/blog" text="Blog" />
+    <LinkCard url="/astro-demo/examples/images" text="Use of images" />
+    <LinkCard
+      url="/astro-demo/examples/fetch-from-external-url"
+      text="Fetch from external URL"
+    />
+    <LinkCard url="/astro-demo/examples/array" text="Array" />
+    <LinkCard url="/astro-demo/examples/react" text="React example" />
+  </div>
 </Layout>
