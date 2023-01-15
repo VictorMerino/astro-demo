@@ -29,7 +29,7 @@ const childrenPages = await Astro.glob('./**/*.astro')
 
   {/* childrenPages.map(page => <LinkCard url={page.url} text={page.url} />) */}
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
     <LinkCard url="/astro-demo/examples/blog" text="Blog" />
     <LinkCard url="/astro-demo/examples/images" text="Use of images" />
     <LinkCard

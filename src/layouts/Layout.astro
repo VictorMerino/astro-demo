@@ -5,9 +5,13 @@ import Header from '../components/structure/Header.astro'
 interface Props {
   pageTitle?: string
   pageDescription?: string
+  padding?: string
 }
-const { pageTitle = 'Default title', pageDescription = 'Default description' } =
-  Astro.props.frontmatter || Astro.props
+const {
+  pageTitle = 'Default title',
+  pageDescription = 'Default description',
+  padding = 'p-5 sm:p-0',
+} = Astro.props.frontmatter || Astro.props
 ---
 
 <html lang="en">
@@ -22,7 +26,7 @@ const { pageTitle = 'Default title', pageDescription = 'Default description' } =
   <body class="bg-slate-800 text-slate-50">
     <div class="flex flex-col h-screen">
       <Header />
-      <main class="container sm:my-8 flex-1">
+      <main class={`container sm:my-8 flex-1 ${padding}`}>
         <slot />
       </main>
       <Footer />

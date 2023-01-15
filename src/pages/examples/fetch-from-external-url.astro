@@ -7,22 +7,20 @@ const users = await response.json()
 ---
 
 <Layout pageTitle="Posts page" pageDescription="Posts page description">
-  <div class="p-5 sm:p-0">
-    <h1 class="mb-3 text-2xl">Users List</h1>
-    <p class="mb-2">
-      This list if fetched from a external URL (jsonplaceholder) and Server Side
-      Rendered. (At the end, the final page only receives raw HTML).
-    </p>
-    <ul>
-      {
-        users.map(
-          (user: { name: unknown; address: { city: string | unknown } }) => (
-            <>
-              <User name={user.name} city={user.address.city} />
-            </>
-          )
+  <h1 class="mb-3 text-2xl">Users List</h1>
+  <p class="mb-2">
+    This list if fetched from a external URL (jsonplaceholder) and Server Side
+    Rendered. (At the end, the final page only receives raw HTML).
+  </p>
+  <ul>
+    {
+      users.map(
+        (user: { name: unknown; address: { city: string | unknown } }) => (
+          <>
+            <User name={user.name} city={user.address.city} />
+          </>
         )
-      }
-    </ul>
-  </div>
+      )
+    }
+  </ul>
 </Layout>
