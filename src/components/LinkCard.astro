@@ -1,0 +1,13 @@
+---
+interface Props {
+  url?: URL | string
+  text: string | unknown
+}
+const { url = '/', text = 'No text' } = Astro.props
+---
+
+<a href={url} class="mb-3 block">
+  <div class="p-10 bg-slate-700 sm:rounded-md">
+    <h3 class="text-2xl font-bold">{text}</h3>
+  </div>
+</a>

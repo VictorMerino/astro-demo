@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro'
 
 import { ButtonsInReact } from '../../components/examples/ButtonsInReact'
+import LinkCard from '../../components/LinkCard.astro'
 
 console.log('This will be shown in server console')
 const h2 = 'Variable from Server'
@@ -13,7 +14,7 @@ const isActive = false
 
 const childrenPages = await Astro.glob('./**/*.astro')
 // console.log(childrenPages[0])
-console.log(Astro)
+// console.log(Astro)
 ---
 
 <style define:vars={{ h2Color }}>
@@ -30,17 +31,7 @@ console.log(Astro)
   <h1 class="title">Astro Fenómeno</h1>
   <h2 class="h2 mb-5">Server Side Rendered variable: {h2}</h2>
 
-  {
-    childrenPages.map(page => (
-      <>
-        <a href={page.url} class="mb-3 block">
-          <div class="p-10 bg-slate-700 sm:rounded-md">
-            <h3 class="text-2xl font-bold">{page.url}</h3>
-          </div>
-        </a>
-      </>
-    ))
-  }
+  {childrenPages.map(page => <LinkCard url={page.url} text={page.url} />)}
 
   <hr />
   TO OTHER PAGE:
