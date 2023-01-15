@@ -7,7 +7,7 @@ export const ButtonsInReact = () => {
   const [counter, setCounter] = useState(1)
 
   const notify = () => {
-    toast.success('Notifyyyy!')
+    toast.success('Notifyyyy (with React)!')
   }
   return (
     <>
