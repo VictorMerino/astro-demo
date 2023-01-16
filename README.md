@@ -3,15 +3,17 @@
 Using:
 
 - TailwindCSS
-- React components (just for demo purposes)
-  -- With Toastify (React plugin)
+- React and Vue components (just for demo purposes)
+  -- With Toastify (plugin used with both libraries)
 
 Features:
 
 - Landing page
 - About page
-- Blog section (with posts written in Markdown)
+- Blog section (with posts written in Markdown) -- And using Tailwind Typography plugin to easily style them
 - Posts section (fetched from external API, and getted via SSR to just print the RAW HTML)
+- Custom Youtube embed component: to lazy load iFrame
+- Really fast load (10/10 score in Lighthouse)
 
 Recommended instalations:
 
@@ -35,7 +37,6 @@ for full integration with Prettier in Astro files
 - Check CSS duplications and possible improvements
 - Fill blog entries with actual implementation details
 - Blog main page: with card of minidescription, images, etc...
-- Facade for Youtube Embed Video: will improve so much "time to interactive" metric
 
 # Based on Astro Starter Kit: Minimal
 
