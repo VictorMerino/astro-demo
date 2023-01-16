@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/Layout.astro
 pageTitle: How to Make the Perfect Cup of Coffee
+prose: true
 ---
 
 # How to Make the Perfect Cup of Coffee

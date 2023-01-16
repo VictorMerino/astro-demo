@@ -2,6 +2,7 @@
 layout: ../../../layouts/Layout.astro
 pageTitle: Blog page with more attrs
 author: Myself
+prose: true
 ---
 
 # Blog page with more attrs

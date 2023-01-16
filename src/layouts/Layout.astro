@@ -11,7 +11,15 @@ const {
   pageTitle = 'Default title',
   pageDescription = 'Default description',
   padding = 'p-5 sm:p-0',
+  prose = false,
 } = Astro.props.frontmatter || Astro.props
+
+let bodyBg = 'bg-slate-800'
+let additionalClass = ''
+if (prose) {
+  bodyBg = 'bg-slate-300'
+  additionalClass = 'prose prose-slate'
+}
 ---
 
 <html lang="en">
@@ -23,10 +31,10 @@ const {
     <title>Astro Landing | {pageTitle}</title>
     <meta name="description" content={pageDescription} />
   </head>
-  <body class="bg-slate-800 text-slate-50">
+  <body class={`${bodyBg} text-slate-50`}>
     <div class="flex flex-col h-screen">
       <Header />
-      <main class={`container sm:my-8 flex-1 ${padding}`}>
+      <main class={`container sm:my-8 flex-1 ${padding} ${additionalClass}`}>
         <slot />
       </main>
       <Footer />

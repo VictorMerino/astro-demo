@@ -1,6 +1,7 @@
 ---
 layout: ../../../layouts/Layout.astro
 pageTitle: Astro tutorial
+prose: true
 ---
 
 # Astro tutorial
